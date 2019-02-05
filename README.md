@@ -3,28 +3,81 @@
 
   var config = {
     categories: [
-      { name: "General", commands: [
-        { key: 'y', name: 'YouTube', url: 'https://www.youtube.com', search: '/results?search_query=' },
+
+    /*
+{ name: "", commands: [
+        { key: '', name: '', url: '', search: '' },
+        { key: '', name: '', url: '', search: '' },
+        { key: '', name: '', url: '', search: '' },
+        { key: '', name: '', url: '', search: '' },
+        { key: '', name: '', url: '', search: '' },
+      ] },
+
+
+    */
+
+
+      { name: "Social", commands: [
+        { key: 'Fb', name: 'Facebook', url: 'https://www.facebook.com/', search: '' },
         { key: 'g', name: 'Gmail', url: 'https://gmail.com', search: '/#search/' },
+        //{ key: '', name: '', url: '', search: '' },
+        //{ key: '', name: '', url: '', search: '' },
+      ] },
+      { name: "VUT", commands: [
+        { key: 'MSL', name: 'MyStudyLife', url: 'https://app.mystudylife.com/calendar', search: '' },
+        { key: 'Rc', name: 'RoundCube', url: 'https://roundcube.fit.vutbr.cz/', search: '' },
+        { key: 'W', name: 'Wis', url: 'https://wis.fit.vutbr.cz/FIT/', search: '' },
+        { key: 'v', name: 'vutbr', url: 'https://www.vutbr.cz/', search: '' },
+        { key: 'f', name: 'Fituska', url: 'https://fituska.eu/noauth.php', search: '' },
+        { key: 'f', name: 'Fitator', url: 'https://fitator.cz/', search: '' },
+        //{ key: '', name: '', url: '', search: '' },
+        //{ key: '', name: '', url: '', search: '' },
+      ] },
+      { name: "Office", commands: [
+        { key: 'L', name: 'Lingea', url: 'https://slovniky.lingea.sk/anglicko-slovensky', search: '' },
+        //{ key: '', name: '', url: '', search: '' },
+        //{ key: '', name: '', url: '', search: '' },
+      ] },
+      
+
+      { name: "Nakup", commands: [
+        { key: 'B', name: 'bazosSK', url: 'https://www.bazos.sk/', search: '' },
+        { key: 'B', name: 'bazosCZ', url: 'https://www.bazos.cz/', search: '' },
+        { key: 'Ls', name: 'Lionsport', url: 'https://www.lionsport.cz/', search: '' },
+        { key: 'A', name: 'alzaSK', url: 'https://www.alza.sk/', search: '' },
+        //{ key: '', name: '', url: '', search: '' },
+        //{ key: '', name: '', url: '', search: '' },
+      ] },
+ 
+
+      { name: "Media", commands: [
+        { key: 'y', name: 'YouTube', url: 'https://www.youtube.com', search: '/results?search_query=' },
+        { key: 'Sc', name: 'Soundcloud', url: 'https://soundcloud.com/', search: '' },
         { key: 'd', name: 'Drive', url: 'https://drive.google.com/drive', search: '/search?q=' },
-        { key: 'm', name: 'Messenger', url: 'https://messenger.com', search: '/search?q=' },
         { key: 'mu', name: 'Google Music', url: 'https://music.google.com', search: '/search?q=' },
+        //{ key: '', name: '', url: '', search: '' },
+        //{ key: '', name: '', url: '', search: '' },
       ] },
-      { name: "Devel", commands: [
+      { name: "Development", commands: [
         { key: 'gh', name: 'GitHub', url: 'https://github.com', search: '/search?q=' },
+        //{ key: '', name: '', url: '', search: '' },
+        //{ key: '', name: '', url: '', search: '' },
+      ] },
+
+      { name: "Tech", commands: [
+        { key: 'Z', name: 'Zive', url: 'https://www.zive.cz/', search: '' },
+        { key: 'Wcc', name: 'Wccftech', url: 'https://wccftech.com/', search: '' },        
+        { key: 'Gsm', name: 'GsmArena', url: 'https://www.gsmarena.com/', search: '' },
+        //{ key: '', name: '', url: '', search: '' },
+        //{ key: '', name: '', url: '', search: '' },
+      ] },
+    ],
+
+
+/* not used links
         { key: 't', name: 'Teknik', url: 'https://teknik.io' },
-        { key: 'hn', name: 'Hacker News', url: 'https://news.ycombinator.com/', search: '' },
         { key: 'lo', name: 'Lobsters', url: 'https://lobste.rs/', search: '' }
-      ] },
-      { name: "Reddit", commands: [
-        { key: 'r', name: '/r/frontpage', url: 'http://old.reddit.com', search: '/search?q=' },
-        { key: 'a', name: '/r/AskReddit', url: 'http://old.reddit.com/r/askreddit', search: '/search?q=' },
-        { key: 'u', name: '/r/unixporn', url: 'http://old.reddit.com/r/unixporn', search: '/search?q=' },
-        { key: 'mo', name: '/r/upmo', url: 'http://old.reddit.com/r/upmo', search: '/search?q=' },
-        { key: 'e', name: '/r/emacs', url: 'http://old.reddit.com/r/emacs', search: '/search?q=' },
-        { key: 'v', name: '/m/vim', url: 'http://old.reddit.com/me/m/vim', search: '/search?q=' },
-        { key: 'l', name: '/r/linux', url: 'http://old.reddit.com/r/linux', search: '/search?q=' },
-      ] },
+
       { name: "Indigo", commands: [
         { key: 'j', name: 'Jira', url: 'https://indigoca.atlassian.net/'},
         { key: 'c', name: 'Confluence', url: 'https://indigoca.atlassian.net/wiki/'},
@@ -34,12 +87,11 @@
         { key: 'oi', name: 'OurIndigo', url: 'https://www.ourindigo.ca/'},
         { key: 'n', name: 'NewRelic', url: 'https://insights.newrelic.com/'},
       ] },
-      { name: "Hearthstone", commands: [
-        { key: 'h', name: '/r/hearthstone', url: 'https://old.reddit.com/r/hearthstone/', search: '/search?q=' },
-        { key: 'td', name: 'Top Decks', url: 'https://www.hearthstonetopdecks.com/' },
-        { key: 'me', name: 'Meta', url: 'https://hsreplay.net/meta/' },
-      ] },
-    ],
+
+
+
+*/
+
 
     // if none of the keys are matched, this is used for searching.
     defaultSearch: 'https://www.google.com/search?q=',
