@@ -1,6 +1,3 @@
-# StartPage-0.0
-<!doctype html>
-
 <script>
   'use strict';
 
