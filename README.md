@@ -554,5 +554,6 @@
     };
   })();
 
-  $("div").removeClass("container-lg");
+  $("div.px-3").removeClass("container-lg");
+  $("div.px-3").removeClass("markdown-body");
 </script>
