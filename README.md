@@ -5,7 +5,7 @@
     categories: [
 
     /*
-{ name: "", commands: [
+      { name: "", commands: [
         { key: '', name: '', url: '', search: '' },
         { key: '', name: '', url: '', search: '' },
         { key: '', name: '', url: '', search: '' },
@@ -133,7 +133,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 
-<title>~</title>
+<title>Startpage</title>
 
 <style type="text/css">
   @font-face {
