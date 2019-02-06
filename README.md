@@ -553,4 +553,6 @@
       }
     };
   })();
+
+  $("div").removeClass("container-lg");
 </script>
