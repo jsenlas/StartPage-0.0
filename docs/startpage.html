@@ -315,6 +315,16 @@
       justify-content: center;
       align-items: center;
     }
+
+    #weather{
+        max-width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:100px;
+    }
+}
+
   }
 </style>
 
@@ -324,24 +334,6 @@
 
 <main>
   <time id="js-clock"></time>
-    <div id="weather">
-        <a class="weatherwidget-io" href="https://forecast7.com/en/49d2016d61/brno/" data-label_1="BRNO" data-label_2="WEATHER" data-theme="original" >BRNO WEATHER</a>
-        <script>
-            !function(d,s,id){
-                var js,fjs=d.getElementsByTagName(s)[0];
-                if(!d.getElementById(id))
-                {
-                    js=d.createElement(s);
-                    js.id=id;
-                    js.src='https://weatherwidget.io/js/widget.min.js';
-                    fjs.parentNode.insertBefore(js,fjs);
-                }
-            }(document,'script','weatherwidget-io-js');
-        </script>
-
-    </div>
-
-
   <form id="js-search-form" autocomplete="off">
     <input id="js-search-input" class="search-input" type="text" autofocus>
     <ul id="js-search-suggestions" class="search-suggestions"></ul>
@@ -576,3 +568,18 @@
   $("div.px-3").removeClass("container-lg");
   $("div.px-3").removeClass("markdown-body");
 </script>
+    <div id="weather" class="flex-container">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/49d2016d61/brno/" data-label_1="BRNO" data-label_2="WEATHER" data-theme="original" data-basecolor="#181818" >BRNO WEATHER</a>
+        <script>
+            !function(d,s,id){
+                var js,fjs=d.getElementsByTagName(s)[0];
+                if(!d.getElementById(id))
+                {
+                    js=d.createElement(s);
+                    js.id=id;
+                    js.src='https://weatherwidget.io/js/widget.min.js';
+                    fjs.parentNode.insertBefore(js,fjs);
+                }
+            }(document,'script','weatherwidget-io-js');
+        </script>
+    </div>
