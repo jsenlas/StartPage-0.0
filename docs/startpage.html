@@ -69,7 +69,7 @@
         { key: 'Z', name: 'Zive', url: 'https://www.zive.cz/', search: '' },
         { key: 'Wcc', name: 'Wccftech', url: 'https://wccftech.com/', search: '' },        
         { key: 'Gsm', name: 'GsmArena', url: 'https://www.gsmarena.com/', search: '' },
-        //{ key: '', name: '', url: '', search: '' },
+        { key: 'ecl', name: 'EyeCandy', url: 'https://mewe.com/group/5c077624c79ae96c601ac610', search: '' },
         //{ key: '', name: '', url: '', search: '' },
       ] },
     ],
@@ -324,6 +324,24 @@
 
 <main>
   <time id="js-clock"></time>
+    <div id="weather">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/49d2016d61/brno/" data-label_1="BRNO" data-label_2="WEATHER" data-theme="original" >BRNO WEATHER</a>
+        <script>
+            !function(d,s,id){
+                var js,fjs=d.getElementsByTagName(s)[0];
+                if(!d.getElementById(id))
+                {
+                    js=d.createElement(s);
+                    js.id=id;
+                    js.src='https://weatherwidget.io/js/widget.min.js';
+                    fjs.parentNode.insertBefore(js,fjs);
+                }
+            }(document,'script','weatherwidget-io-js');
+        </script>
+
+    </div>
+
+
   <form id="js-search-form" autocomplete="off">
     <input id="js-search-input" class="search-input" type="text" autofocus>
     <ul id="js-search-suggestions" class="search-suggestions"></ul>
