@@ -151,6 +151,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <title>Startpage</title>
 
 <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="leftMenu">
@@ -166,18 +167,10 @@
   <a href="#" class="w3-bar-item w3-button">Link 2</a>
   <a href="#" class="w3-bar-item w3-button">Link 3</a>
 </div>
-<div class="w3-teal">
-  <button class="w3-button w3-teal w3-xlarge w3-left" onclick="openLeftMenu()">&#9776;</button>
+  <button class="" id="yt-button" onclick="openLeftMenu()">
+      <img src="yt.png" alt="Youtube" width="70px">
+  </button>
   <button class="w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()">&#9776;</button>
-  <div class="w3-container">
-    <h1>My Page</h1>
-  </div>
-</div>
-
-<div class="w3-container">
-<p>In this example, we demonstrate how to use two side navigations.</p>
-<p>We have created two "menu" buttons: one to open the side navigation from the left and one to open it from the right.</p>
-</div>
 
 <script>
 function openLeftMenu() {
@@ -383,6 +376,15 @@ function closeRightMenu() {
         margin-right: auto;
         margin-top:100px;
     }
+
+    #yt-button{
+        background-color: #181818 !important;
+          border: none;
+    }
+    #yt-button:hover{
+        background-color: #eff0f1 !important;
+    }
+
 }
 
   }
