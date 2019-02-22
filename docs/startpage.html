@@ -17,6 +17,7 @@
     */
 
 
+
       { name: "Social", commands: [
         { key: 'Fb', name: 'Facebook', url: 'https://www.facebook.com/', search: '' },
         { key: 'g', name: 'Gmail', url: 'https://gmail.com', search: '/#search/' },
@@ -40,7 +41,6 @@
         //{ key: '', name: '', url: '', search: '' },
         //{ key: '', name: '', url: '', search: '' },
       ] },
-      
 
       { name: "Nakup", commands: [
         { key: 'B', name: 'bazosSK', url: 'https://www.bazos.sk/', search: '' },
@@ -59,8 +59,16 @@
         { key: 'mu', name: 'Google Music', url: 'https://music.google.com', search: '/search?q=' },
         { key: 's', name: 'Songsterr', url: 'https://www.songsterr.com/', search: '' },
         //{ key: '', name: '', url: '', search: '' },
-        //{ key: '', name: '', url: '', search: '' },
       ] },
+
+      { name: "Streams", commands: [
+        { key: '', name: '', url: '', search: '' },
+        { key: '', name: '', url: '', search: '' },
+        { key: '', name: '', url: '', search: '' },
+        { key: '', name: '', url: '', search: '' },
+        { key: '', name: '', url: '', search: '' },
+      ] },
+
       { name: "Development", commands: [
         { key: 'gh', name: 'GitHub', url: 'https://github.com', search: '/search?q=' },
         //{ key: '', name: '', url: '', search: '' },
@@ -73,6 +81,13 @@
         { key: 'Gsm', name: 'GsmArena', url: 'https://www.gsmarena.com/', search: '' },
         { key: 'ecl', name: 'EyeCandy', url: 'https://mewe.com/group/5c077624c79ae96c601ac610', search: '' },
         //{ key: '', name: '', url: '', search: '' },
+      ] },
+      { name: "Viera", commands: [
+        { key: '', name: '', url: 'https://www.hlas-mucedniku.cz/pnp.php', search: '' },
+        { key: '', name: '', url: '', search: '' },
+        { key: '', name: '', url: '', search: '' },
+        { key: '', name: '', url: '', search: '' },
+        { key: '', name: '', url: '', search: '' },
       ] },
     ],
 
@@ -135,9 +150,52 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <title>Startpage</title>
 
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="leftMenu">
+  <button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
+  <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge w3-left" onclick="openLeftMenu()">&#9776;</button>
+  <button class="w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()">&#9776;</button>
+  <div class="w3-container">
+    <h1>My Page</h1>
+  </div>
+</div>
+
+<div class="w3-container">
+<p>In this example, we demonstrate how to use two side navigations.</p>
+<p>We have created two "menu" buttons: one to open the side navigation from the left and one to open it from the right.</p>
+</div>
+
+<script>
+function openLeftMenu() {
+  document.getElementById("leftMenu").style.display = "block";
+}
+
+function closeLeftMenu() {
+  document.getElementById("leftMenu").style.display = "none";
+}
+
+function openRightMenu() {
+  document.getElementById("rightMenu").style.display = "block";
+}
+
+function closeRightMenu() {
+  document.getElementById("rightMenu").style.display = "none";
+}
+</script>
 <style type="text/css">
   @font-face {
     font-family: 'Lato';
